@@ -13,7 +13,7 @@ from lib.helpers import check_that_these_are_equal
 
 # Here's an example:
 
-length = len("Hello!")
+length = len("Hello! and good day to you")
 print(f"The string is {length} characters long")
 
 # @TASK: Try it out yourself by changing the string "Hello!" above, and then
@@ -40,7 +40,7 @@ old_string = "Hello, YOUR_NAME!"
 new_string = old_string.replace("YOUR_NAME", "Kay")
 
 # Uncomment this next line to see the result:
-# print(new_string)
+print(new_string)
 
 # You'll notice here that the function is coming in a different place. Let's
 # compare `len` and `replace`:
@@ -77,6 +77,7 @@ print("Function: uppercase")
 
 def make_uppercase(string):
   # Return the string in uppercase
+  return string.upper()
   pass
 
 check_that_these_are_equal(
@@ -94,6 +95,7 @@ print("Function: lowercase")
 
 def make_lowercase(string):
   # Return the string in lowercase
+  return string.lower()
   pass
 
 check_that_these_are_equal(
@@ -111,6 +113,7 @@ print("Function: strip_whitespace")
 
 def strip_whitespace(string):
   # Return the string with any whitespace removed from the start and end
+  return string.strip()
   pass
 
 check_that_these_are_equal(

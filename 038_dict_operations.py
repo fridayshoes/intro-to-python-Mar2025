@@ -43,7 +43,7 @@ print(letter_counts)
 
 # letter_counts = {}
 # for letter in text:
-#   letter_counts[letter] = letter_counts[letter] + 1
+#  letter_counts[letter] = letter_counts[letter] + 1
 
 # In the assignment above, our right hand expression tries to access the value
 # for a key that has not been added yet. This causes an error.
@@ -61,6 +61,22 @@ print("Function: count_words_by_length")
 # Since there are two words of length 3, etc.
 
 def count_words_by_length(words):
+  # the keys will be the wordlength and the values will be the frequency
+  word_length_frequency = {}
+  
+  for word in words:
+    wordlength = len(word) # find the length of a word
+    print(wordlength)
+    if wordlength not in word_length_frequency: # if wordlength doesn't exist
+      word_length_frequency[wordlength] = 1 # wordlength count will be 1
+
+    else: # add 1 to wordlength count
+      word_length_frequency[wordlength] = word_length_frequency[wordlength] + 1
+
+  return word_length_frequency
+  
+  
+  
   pass
 
 check_that_these_are_equal(
